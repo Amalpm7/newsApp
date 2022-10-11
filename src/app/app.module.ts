@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NewsAppComponent } from './news-app/news-app.component';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NewsAppComponent } from './news-app/news-app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
